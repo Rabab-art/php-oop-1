@@ -22,9 +22,20 @@ public function __construct()
 
 public function presentazione()
 {
-    echo "Ciao i miei film preferiti sono $this->title";
+    echo "Ciao il mio film preferito è $this->title";
 }
 
+//*GETTER 
+
+public function getDirector()
+{
+    echo "Dalla regista $this->director " ;
+}
+
+public function getYear()
+{
+    return $this->year;
+}
 
 
 }
@@ -44,4 +55,9 @@ $wanted->director= "Timur Bekmambetov";
 $wanted->year = "2008";
 
 
+echo $mammaMia->presentazione();
+echo "<br />";
+echo $mammaMia->getDirector();
+echo "<br />";
+echo "Del". " ".$mammaMia->getYear();
 
